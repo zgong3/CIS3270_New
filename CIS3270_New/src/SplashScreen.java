@@ -16,8 +16,8 @@ public static class ShowImage extends Application {
 	  
 	  
     // Create a pane to hold the image views
-    Pane pane = new HBox(50);
-    pane.setPadding(new Insets(50, 50, 50, 50));
+    Pane pane = new HBox(10);
+    pane.setPadding(new Insets(100));
     Image image = new Image("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRONV99IsFO1V8zvO22AvTIY50Grj-pmO6lBD4cNDPu9XkBfyKX-Q");
     pane.getChildren().add(new ImageView(image));
     

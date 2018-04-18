@@ -2,7 +2,7 @@
 	import java.util.Calendar;
 
 	// A comment for test
-	public class FlightInfo {
+	public class Flight {
 
 		
 		private int flightId;
@@ -16,7 +16,7 @@
 		private int currentPassengers = 0;
 		private boolean isFull = false;
 
-		public FlightInfo(Calendar departureDate, Calendar arrivalDate,
+		public Flight(Calendar departureDate, Calendar arrivalDate,
 				String departureCity, String arrivalCity, String flightNum,
 				String price, int max_passengers) {
 			this.departureDate = departureDate;
