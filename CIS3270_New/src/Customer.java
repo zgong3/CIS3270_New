@@ -2,7 +2,7 @@
 
 public class Customer {
 
-	 String firstName;
+	private String firstName;
 	private String lastName;
 	private String address;
 	private int zip;
@@ -13,6 +13,8 @@ public class Customer {
 	private String SSN;
 	private String securityQuestion;
 	private String securityAnswer;
+	public boolean admin;
+
 
 	public String getFirstName() {
 		return firstName;
@@ -101,10 +103,14 @@ public class Customer {
 	public void setSecurityAnswer(String securityAnswer) {
 		this.securityAnswer = securityAnswer;
 	}
-	
-	
-	
-	
+
+	public boolean isAdmin() {
+		return admin;
+	}
+	public void setAdminUser (boolean adminUser) {
+		this.admin = adminUser;
+	}
+
 }
 
 

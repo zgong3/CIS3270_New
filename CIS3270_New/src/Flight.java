@@ -1,24 +1,24 @@
 	import javafx.application.Application;
-	import java.util.Calendar;
+	import java.sql.Date;
 
-	// A comment for test
 	public class Flight {
 
 		
 		private int flightId;
-		private Calendar departureDate;
-		private Calendar arrivalDate;
+		private Date departureDate;
+		private Date arrivalDate;
 		private String departureCity;
 		private String arrivalCity;
 		private String flightNum;
 		private String price;
 		private int maxPassengers;
-		private int currentPassengers = 0;
-		private boolean isFull = false;
+		private int currentPassengers;
+		private boolean isFull;
 
-		public Flight(Calendar departureDate, Calendar arrivalDate,
+		public Flight(Date departureDate, Date arrivalDate,
 				String departureCity, String arrivalCity, String flightNum,
 				String price, int max_passengers) {
+			super();
 			this.departureDate = departureDate;
 			this.arrivalDate = arrivalDate;
 			this.departureCity = departureCity;
@@ -26,6 +26,7 @@
 			this.flightNum = flightNum;
 			this.price = price;
 			this.maxPassengers = maxPassengers;
+			this.currentPassengers = currentPassengers;
 		}
 
 		public int getFlightId() {
@@ -36,19 +37,19 @@
 			this.flightId = flightId;
 		}
 
-		public Calendar getDepartureDate() {
+		public Date getDepartureDate() {
 			return departureDate;
 		}
 
-		public void setDepartureDate(Calendar departureDate) {
+		public void setDepartureDate(Date departureDate) {
 			this.departureDate = departureDate;
 		}
 
-		public Calendar getArrivalDate() {
+		public Date getArrivalDate() {
 			return arrivalDate;
 		}
 
-		public void setArrivalDate(Calendar arrivalDate) {
+		public void setArrivalDate(Date arrivalDate) {
 			this.arrivalDate = arrivalDate;
 		}
 
