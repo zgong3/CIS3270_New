@@ -1,5 +1,3 @@
-	import javafx.application.Application;
-	import java.sql.Date;
 
 	public class Flight {
 
